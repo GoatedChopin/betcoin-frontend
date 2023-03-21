@@ -48,6 +48,7 @@ const SurveyQuestionForm: React.FC<SurveyProps> = ({ onSubmit }) => {
 
   return (
     <div className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20">
+      <p className='text-2xl'>Create Poll</p>
       <form onSubmit={handleSubmit}>
         <label htmlFor="question">Question:</label>
         <br/>

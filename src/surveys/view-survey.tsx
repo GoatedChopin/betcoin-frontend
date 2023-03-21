@@ -1,6 +1,6 @@
 import { link } from "fs";
 import SurveyQuestionForm from "./create-survey";
-import SurveyProps from "./create-survey";
+// import SurveyProps from "./create-survey";
 
 
 type Answer = {
@@ -29,3 +29,5 @@ const SurveyQuestion: React.FC<SurveyProps> = ({ question, answers }) => {
         </div>
     );
 };
+
+export default SurveyProps
