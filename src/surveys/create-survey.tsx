@@ -5,11 +5,11 @@ type Answer = {
   text: string
 }
 
-type Props = {
+type SurveyProps = {
   onSubmit: (question: string, answers: Answer[]) => void
 }
 
-const SurveyQuestionForm: React.FC<Props> = ({ onSubmit }) => {
+const SurveyQuestionForm: React.FC<SurveyProps> = ({ onSubmit }) => {
   const [question, setQuestion] = useState<string>('');
   const [answers, setAnswers] = useState<Answer[]>([{id: 0, text: ''}]);
 
